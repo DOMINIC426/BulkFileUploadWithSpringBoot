@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: UploadFileApplication
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: 'update'
+
+  datasource:
+    username: dominic
+    password: 1234
+    url: jdbc:postgresql://localhost:5432/mfano
+
+
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
